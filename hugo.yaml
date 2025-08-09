@@ -1,0 +1,36 @@
+baseURL: "paramdavda.github.io"
+languageCode: en-us
+title: Param Davda
+theme: Papermod
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - $
+            - $
+        enable: true
+params:
+  math: true
+  homeInfoParams:
+    Title: "Hey!"
+    Content: I'm Param, a freshman at Yale. This is an evolving (and inconsistent) repository of quantitative stuff I find cool. If you have any suggestions or spot any errors, reach out below. Happy reading!
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/param-davda-400755218/"
+
+
+
+menu:
+  main:
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
